@@ -1,9 +1,9 @@
 {% extends "layout.html" %}
 {% import "helpers/forms.html" as forms %}
-{% block title %}Validation Error - Flask Tracking{% endblock %}
+{% block title %}Input Validation Error{% endblock %}
 {% block content %}
 {{ super() }}
-<p>An error occured, please correct any mistakes and try again.</p>
+<p>An error occured during input validation, please correct input and submit again.</p>
 <ul>
 {% for field in form if field.errors %}
 <li>{{ field.label }}:
